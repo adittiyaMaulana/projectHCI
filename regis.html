@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<!-- header -->
+
+<div class="container">
+  <img src="asset/flower1.jpg" alt="flower" style="width: 100%; height: 500px; opacity: 57%;">
+  <div class="centered">
+  <h1 style="color: black;">BEAUDEI</h1>
+  <h2 style="color: black;"><b>One Touch Beauty</b></h2>
+  </div>
+</div>
+
+
+<!-- navbar -->
+  <div class="navbar">
+  <div class="navbar-center">
+    <b>
+    <a href="index.html">Home</a>
+    <a href="promotion.html">Promotion</a>
+    <a href="regis.html">Registration</a>
+    <div class="dropdown">
+      <button class="dropbtn"> <b>Shop Make Up</b> 
+        <i class="dropdown i"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="makeup/faces.html">Faces</a>
+        <a href="makeup/eye.html">Eye</a>
+        <a href="makeup/lips.html">Lips</a>
+        <a href="makeup/cheeks.html">Cheeks</a>
+        <a href="makeup/forehead.html">Forehead</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn"><b>Shop Skincare</b> 
+        <i class="dropdown i"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="skincare/alltype.html">All Type</a>
+        <a href="skincare/moisturizer.html">Moisturizer</a>
+        <a href="skincare/moisturizer.html">Cleanser</a>
+        <a href="skincare/serum.html">Serum</a>
+        <a href="skincare/exfoliator.html">Exfoliator</a>
+        <a href="skincare/sunscreen.html">Sunscreen</a>
+      </div>
+    </div>
+    </b>
+  </div> 
+  </div>
+<hr>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validation();" method="POST" style="margin-left: 0.3cm; margin-right: 0.3cm;">
+    <div class="form-container">
+      <h1>Register</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+  
+      <label for="email"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" id="name" required>
+  
+<form name="myForm" action="/action_page.php" onsubmit="return validateemail();" method="POST" >
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+</form>  
+<form name="myForm" action="/action_page.php" onsubmit="return validationPass();" method="POST" >
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+</form>
+      <label for="psw-cnf"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Confirm Password" name="psw-repeat" id="psw-repeat" required>
+
+      <label for="psw-cnf"><b>Address</b></label>
+      <input type="password" placeholder="Address" name="address" id="address" required>
+
+      <br><br><br>
+      <label for="gender"><b>Gender:</b></label>
+      <select id="gender" name="gender">
+        <option value="volvo">Female</option>
+        <option value="saab">Male</option>
+      </select>
+      
+      <br><br><br>
+      <label for="skin"><b>Skin Type:</b></label>
+      <select id="skin" name="skin">
+        <option value="Normal">Normal</option>
+        <option value="Dry">Dry</option>
+        <option value="Oily">Oily</option>
+        <option value="Sensitive">Sensitive</option>
+      </select>
+
+      <br><br>
+
+      <hr>
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+  
+      <a href="regis.html">
+        <button type="submit" class="registerbtn">Register</button>
+      </a>
+    </div>
+    
+    <div class="container signin">
+      <p style="color:black">Already have an account? <a href="#">Sign in</a>.</p>
+    </div>
+</form>
+  
+
+<!-- footer -->
+
+<hr class="hr-footer" style="border: 1px solid black;">  
+  
+<div class="row">
+  <div class="side-footer" style="text-align: right;">
+      <p>Contact Us</p>
+      <p>Email    : <a href="##">beaudei_cosmeticstore@gmail.com</a></p>
+      <p>Facebook : <a href="https://web.facebook.com/Beaudei-Cosmetic-Store-100146481748848">Beaudei Cosmetic Store</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/beaudei_cosmetic_store/">@beaudei_cosmetic_store</a></p> 
+  </div>
+
+  <div class="main-footer">
+  <form action="/action_page.php">
+  <label for="subject">Email Us</label>
+  <br>
+  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px; width: 500px;"></textarea>
+  <br>
+  <input type="submit" value="Submit">
+  </form>
+  </div>
+</div>
+
+
+<script>
+  function validation() {
+  var x = document.forms["myForm"]["name"]["psw"]["psw-repeat"]["address"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+
+  function validationPass() {
+  var x = document.forms["myForm"]["psw"].value;
+  if (x.length != 8) {
+    alert("Password must be more than 8 character");
+    return false;
+  }
+  }
+function validateemail()  
+{  
+  var x=document.myForm.email.value;  
+  var atposition=x.indexOf("@");  
+  var dotposition=x.lastIndexOf(".");  
+  if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+    alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+    return false;  
+  }  
+}  
+}
+</script>
+
+</body>
+</html> 

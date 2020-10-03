@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+
+<!-- header -->
+
+<div class="container">
+  <img src="../asset/flower1.jpg" alt="flower" style="width: 100%; height: 500px; opacity: 57%;">
+  <div class="centered">
+  <h1 style="color: black;">BEAUDEI</h1>
+  <h2 style="color: black;"><b>One Touch Beauty</b></h2>
+  </div>
+</div>
+
+
+<!-- navbar -->
+  <div class="navbar">
+  <div class="navbar-center">
+    <b>
+    <a href="../index.html">Home</a>
+    <a href="../promotion.html">Promotion</a>
+    <a href="../regis.html">Registration</a>
+    <div class="dropdown">
+      <button class="dropbtn"> <b>Shop Make Up</b> 
+        <i class="dropdown i"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="../makeup/faces.html">Faces</a>
+        <a href="../makeup/eye.html">Eye</a>
+        <a href="../makeup/lips.html">Lips</a>
+        <a href="../makeup/cheeks.html">Cheeks</a>
+        <a href="../makeup/forehead.html">Forehead</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn"><b>Shop Skincare</b> 
+        <i class="dropdown i"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="../skincare/alltype.html">All Type</a>
+        <a href="../skincare/moisturizer.html">Moisturizer</a>
+        <a href="../skincare/cleanser.html">Cleanser</a>
+        <a href="../skincare/serum.html">Serum</a>
+        <a href="../skincare/exfoliator.html">Exfoliator</a>
+        <a href="../skincare/sunscreen.html">Sunscreen</a>
+      </div>
+    </div>
+    </b>
+  </div> 
+  </div>
+<hr>
+
+<div class="promotion-list">
+<div id="btnContainer-promotion">
+  <button class="btn-promotion" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
+  <button class="btn-promotion active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+  <a href="">
+    <img src="../asset/shopping-carticon.jpg" alt="shopping-cart-icon" style="width: 50px; height: 50px;">
+  </a>
+</div>
+
+<br>
+
+<div class="row-promotion">
+    
+  <div class="column-promotion" style="background-color:#ddd;">
+    <div class="row-row-p">
+      <div class="side-side-p">
+      <img src="../asset/maybelline-exfo.jpg" alt="" style="width: 200px; height: 250px;">
+      </div>
+
+      <div class="main-main-p">
+        <p>Maybelline Exfoliator</p>
+        <p>Rp. 200.000,-</p>
+        <form>
+          <input class="btn" type="button" value="Buy Now"
+          onclick="window.location.href='#'" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="column-promotion" style="background-color:#ddd;">
+    <div class="row-row-p">
+      <div class="side-side-p">
+      <img src="../asset/olay-exfo.jpg" alt="" style="width: 200px; height: 250px;">
+      </div>
+
+      <div class="main-main-p">
+        <p>Olay Exfoliator</p>
+        <p>Rp. 170.000,-</p>
+        <form>
+          <input class="btn" type="button" value="Buy Now"
+          onclick="window.location.href='#'" />
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="column-promotion" style="background-color:#ddd;">
+    <div class="row-row-p">
+      <div class="side-side-p">
+      <img src="../asset/olay-exfo2.jpg" alt="" style="width: 200px; height: 250px;">
+      </div>
+
+      <div class="main-main-p">
+        <p>Olay Exfoliator</p>
+        <p>Rp. 150.000,-</p>
+        <form>
+          <input class="btn" type="button" value="Buy Now"
+          onclick="window.location.href='#'" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="column-promotion" style="background-color:#ddd;">
+    <div class="row-row-p">
+      <div class="side-side-p">
+      <img src="../asset/chanel-exfo.jpeg" alt="" style="width: 200px; height: 250px;">
+      </div>
+
+      <div class="main-main-p">
+        <p>Chanel Exfoliator</p>
+        <p><s>Rp. 750.000,-</s></p>
+        <p>Rp. 375.000,-</p>
+        <form>
+          <input class="btn" type="button" value="Buy Now"
+          onclick="window.location.href='#'" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="column-promotion" style="background-color:#ddd;">
+    <div class="row-row-p">
+      <div class="side-side-p">
+      <img src="../asset/dior-exfoliator.png" alt="" style="width: 200px; height: 250px;">
+      </div>
+
+      <div class="main-main-p">
+        <p>Dior Exfoliator</p>
+        <p><s>Rp. 780.000,-</s></p>
+        <p>Rp. 390.000,-</p>
+        <form>
+          <input class="btn" type="button" value="Buy Now"
+          onclick="window.location.href='#'" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="column-promotion" style="background-color:#ddd;">
+    <div class="row-row-p">
+      <div class="side-side-p">
+      <img src="../asset/esteelauder-exfo.jpg" alt="" style="width: 200px; height: 250px;">
+      </div>
+
+      <div class="main-main-p">
+        <p>Estee Lauder Exfoliator</p>
+        <p>Rp. 600.000,-</p>
+        <form>
+          <input class="btn" type="button" value="Buy Now"
+          onclick="window.location.href='#'" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<!-- footer -->
+<footer>
+<hr class="hr-footer" style="border: 1px solid black;">  
+  
+<div class="row">
+  <div class="side-footer" style="text-align: right;">
+      <p>Contact Us</p>
+      <p>Email    : <a href="##">beaudei_cosmeticstore@gmail.com</a></p>
+      <p>Facebook : <a href="https://web.facebook.com/Beaudei-Cosmetic-Store-100146481748848">Beaudei Cosmetic Store</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/beaudei_cosmetic_store/">@beaudei_cosmetic_store</a></p> 
+  </div>
+
+  <div class="main-footer">
+  <form action="/action_page.php">
+  <label for="subject">Email Us</label>
+  <br>
+  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px; width: 500px;"></textarea>
+  <br>
+  <input type="submit" value="Submit">
+  </form>
+  </div>
+</div>
+
+
+</footer>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column-promotion");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+// Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
+</script>
+
+</body>
+</html>
